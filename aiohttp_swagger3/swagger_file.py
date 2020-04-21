@@ -81,7 +81,7 @@ class SwaggerFile(Swagger):
                     if handler__:
                         handler_ = handler__
                     else:
-                        setattr(handler, save_method, handler_)
+                        setattr(handler, saved_method, handler_)
 
                     route = SwaggerRoute(meth, path, handler_, swagger=self)
                     setattr(
