@@ -76,6 +76,13 @@ class SwaggerFile(Swagger):
                     handler_ = getattr(handler, meth, None)
                     if handler_ is None:
                         continue
+                    saved_method = "_" + meth
+                    handler__ = getattr(handler, saved_method, None)
+                    if handler__:
+                        handler_ = handler__
+                    else:
+                        setattr(handler, save_method, handler_)
+
                     route = SwaggerRoute(meth, path, handler_, swagger=self)
                     setattr(
                         handler,
