@@ -9,7 +9,7 @@ with open(PurePath(__file__).parent / "requirements.txt") as f:
 
 setup(
     name="aiohttp-swagger3",
-    version=__version__,
+    version="0.4.3",
     packages=["aiohttp_swagger3"],
     package_data={
         "aiohttp_swagger3": [
