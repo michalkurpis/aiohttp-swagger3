@@ -28,7 +28,7 @@ setup(
     description="validation for aiohttp swagger openAPI 3",
     long_description=readme.read_text("utf-8"),
     long_description_content_type="text/x-rst",
-    setup_requires=["pytest-runner"],
+    setup_requires=["pytest-runner", 'aiohttp', 'pyyaml', 'attrs', 'fastjsonschema', 'strict_rfc3339'],
     tests_require=["pytest"],
     classifiers=[
         "License :: OSI Approved :: Apache Software License",
