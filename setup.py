@@ -44,5 +44,5 @@ setup(
         "Topic :: Internet :: WWW/HTTP",
     ],
     python_requires=">=3.6",
-    install_requires=['aiohttp', 'pyyaml', 'attrs', 'fastjsonschema', 'strict_rfc3339'],
+    install_requires=['attrs','aiohttp', 'pyyaml',  'fastjsonschema', 'strict_rfc3339'],
 )
