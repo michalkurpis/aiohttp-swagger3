@@ -1,4 +1,3 @@
-from aiohttp_swagger3 import __version__
 from pathlib import Path, PurePath
 from setuptools import setup
 
